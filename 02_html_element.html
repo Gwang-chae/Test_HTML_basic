@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- HTML은 tag로 구성된 언어 -->
+<!-- tag는 두가지 종류가 있음
+    1. 시작태그와 닫는 태그로 구성된 태그
+    2. 시작태그만 가지고 있는 태그  -->
+
+<!-- tag는 중첩구조를 가질 수 있음
+     하나의 태그가 다른 태그들을 포함할 수 있음
+     이때 부모와 자식의 관계가 성립  -->
+
+<!-- tag와 tag 안에 포함된 요소들을 통칭해서
+     element라고 부름
+     tag 안에 property/attribute  -->
+
+<!-- HTML 문서는 크게 2가지 부분으로 구성
+     <head> : 설정 부분
+     <body> : web brower에서 rendering할 데이터   -->
+
+<!-- tag는 크게 두가지 종류
+     1. block level element
+     - 무조건 1라인을 차지
+     2. inline element
+     - 내용에 대한 영역만 차지    -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2 {
+            color: red;
+            background-color: yellow;
+            font-size: 30pt;
+        }
+        .my_class{
+            color: blue;
+            background-color: skyblue;
+            font-size: 25;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="my_class">아우성!!</h1>
+    <h2>아우성!!</h2>
+    <h3>아우성!!</h3>
+    <h4>아우성!!</h4>
+    <h5>아우성!!</h5>
+    <h6 class="my_class">아우성!!</h6>
+    <img src="image/lion.png">
+    <img src="image/lion.png" width='300' data-author="홍길동">
+    <!-- style은 CSS 파트이기 때문에 HTML tag 활용은  지양-->
+    <br>
+    <ul>
+        <li>서울</li>
+        <li class="my_class">인천</li>
+        <li>제주</li>
+    </ul>
+    <ol>
+        <li>서울</li>
+        <li>인천</li>
+        <li class="my_class">제주</li>
+    </ol>
+    <a href="http://www.naver.com">여기를 클릭하세요!</a>
+    <div> div는 영역만 잡아 주는 태그</div>
+    <span> span은 영역만 잡아 주는 태그, 기능은 없고 글자 표현할 때 사용해요</span>
+    <br>
+    <!-- 사용자 입력 양식 -->
+    <input type="button" value="버튼을 누르세요">
+    <input type="text">
+    <input type="date">
+    <input type="color">
+</body>
+</html>

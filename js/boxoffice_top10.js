@@ -19,7 +19,7 @@ function call_ajax() {
                     var rankTd = $("<td id='index'></td>").text(item.rnum)
                     var imgTd = $("<td></td>")
                     var movie_name = item.movieNm
-                    var findImg = function search_image() {
+                    function search_image() {
                         $.ajax({
                             async: true,   //비동기 방식의 호출
                             url: "https://dapi.kakao.com/v2/search/image",    //서버쪽 프로그램 url
@@ -43,7 +43,7 @@ function call_ajax() {
                             },
                         })
                     }
-                    findImg()
+                    search_image()
 
                     var movieNmTd = $("<td></td>").text(item.movieNm)
                     var salesAccTd = $("<td></td>").text(item.salesAcc)
